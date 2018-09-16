@@ -1,0 +1,13 @@
+{
+  "name": "chatoo2412.github.io",
+  "description": "chatoo's development blog.",
+  "author": "chatoo2412",
+  "homepage": "https://chatoo2412.github.io/",
+  "scripts": {
+    "pretest": "prettier --list-different \"**/*.{md,yml}\"",
+    "test": "exit 0"
+  },
+  "devDependencies": {
+    "prettier": "github:prettier/prettier"
+  }
+}
