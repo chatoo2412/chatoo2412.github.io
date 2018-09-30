@@ -1,2 +1,156 @@
-remote_theme: "mmistakes/minimal-mistakes"
+# Site Settings
 remote_theme: mmistakes/minimal-mistakes
+
+minimal_mistakes_skin: default
+
+locale: ko-KR
+
+title: chatoo의 웹개발 블로그
+title_separator: "-"
+
+name: Wooram Jun
+
+description: 웹기술과 개발 프로세스에 대한 생각을 공유합니다.
+
+url: https://chatoo2412.github.io/
+
+# baseurl: / # BUG: https://github.com/mmistakes/minimal-mistakes/blob/6d6d738e234226f13d42f7115f964e9ff605c09d/_includes/breadcrumbs.html#L22
+baseurl: ""
+
+repository: chatoo2412/chatoo2412.github.io
+
+# head_scripts:
+
+teaser: /assets/images/cover.png
+
+breadcrumbs: true
+
+words_per_minute: 200 # TODO:
+
+comments:
+  provider: staticman_v2
+staticman:
+  branch: master
+reCaptcha:
+  siteKey: 6LdECXEUAAAAAKlce6JumAjXObpflAQ_TbCfg6zv
+  secret: GSz/p9ekpchx4x2aM7U2PcQBVhrmF0/z+maFBWk9dwkwoMDwN2GQN2rBgtWiAlAbP2yHyn8F9XAhKegvSBJmSp3pP7RPp9bRCJAXLF0suytAU2t1YmiAxf3gRRCkswHbIzNZOa8YHU3G5BBetJKcvlLCG11ffjS26HiaCDZpeQE=
+
+atom_feed:
+  path:
+
+search: true
+search_full_content: true
+search_provider: lunr
+
+google_site_verification: H7uBU48g_L07v7xGSLaC74nZVRyGG2VQR1VdCy6_MLY
+naver_site_verification: 222e2a1c028a3cb2b03a0303e74687f323bed21c
+twitter:
+  username: chatoo2412
+facebook:
+  username: chatoo2412
+og_image: /assets/images/cover.png
+social:
+  type: Person
+  links:
+    - https://github.com/chatoo2412
+    - https://www.linkedin.com/in/chatoo2412/
+
+analytics:
+  provider: google
+  google:
+    tracking_id: UA-126058581-1
+
+# Site Author
+author:
+  name: Wooram Jun
+  avatar: /assets/images/avatar.jpg
+  bio: 웹 개발자입니다. UX와 프론트엔드, 개발 프로세스에 관심이 많습니다.
+  location: Seoul, Korea
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/chatoo2412
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/chatoo2412/
+
+# Site Footer
+footer:
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/chatoo2412
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/chatoo2412/
+
+# Reading Files
+include:
+  - /_pages
+exclude:
+  - /Gemfile
+  - /Gemfile.lock
+  - /node_modules
+  - /package.json
+  - /package-lock.json
+  - /staticman.yml
+  - /README.md
+  - "*.code-workspace"
+
+# Conversion
+
+# Markdown Processing
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+timezone: Asia/Seoul
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-archives
+
+# Archives
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+# HTML Compression
+compress_html:
+  clippings: all # TODO: Test.
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true

@@ -1,0 +1,8 @@
+ko: &DEFAULT_KO
+  pagination_previous: "&lt; Older Post"
+  pagination_next: "Newer Post &gt;"
+  tags_label: Tags
+  categories_label: Categories
+  date_label: Updated at
+ko-KR:
+  <<: *DEFAULT_KO
