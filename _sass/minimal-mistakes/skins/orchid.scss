@@ -1,0 +1,11 @@
+// Colors
+$orchid: #7981ff;
+
+$link-color: lighten($orchid, 10%);
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700|Noto+Sans+KR:400,700|Space+Mono:400,700&subset=korean");
+
+$serif: "Noto Serif KR", serif;
+$sans-serif: "Noto Sans KR", sans-serif;
+$monospace: "Space Mono", monospace;
