@@ -12,9 +12,8 @@ name: Wooram Jun
 
 description: 웹기술과 개발 프로세스에 대한 생각을 공유합니다.
 
-url: https://chatoo2412.github.io/
+url: https://chatoo2412.github.io
 
-# baseurl: / # BUG: https://github.com/mmistakes/minimal-mistakes/blob/6d6d738e234226f13d42f7115f964e9ff605c09d/_includes/breadcrumbs.html#L22
 baseurl: ""
 
 repository: chatoo2412/chatoo2412.github.io
@@ -118,29 +117,16 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-archives
 
 # Archives
 category_archive:
-  type: jekyll-archives
+  type: liquid
   path: /categories/
 tag_archive:
-  type: jekyll-archives
+  type: liquid
   path: /tags/
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
 
 # HTML Compression
-compress_html:
-  clippings: all # TODO: Test.
 
 # Defaults
 defaults:
@@ -151,6 +137,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false # TODO: Enable.
       share: true
       related: true
