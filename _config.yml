@@ -25,12 +25,7 @@ breadcrumbs: true
 words_per_minute: 40
 
 comments:
-  provider: staticman_v2
-staticman:
-  branch: master
-reCaptcha:
-  siteKey: 6LdECXEUAAAAAKlce6JumAjXObpflAQ_TbCfg6zv
-  secret: GSz/p9ekpchx4x2aM7U2PcQBVhrmF0/z+maFBWk9dwkwoMDwN2GQN2rBgtWiAlAbP2yHyn8F9XAhKegvSBJmSp3pP7RPp9bRCJAXLF0suytAU2t1YmiAxf3gRRCkswHbIzNZOa8YHU3G5BBetJKcvlLCG11ffjS26HiaCDZpeQE=
+  provider: custom
 
 search: true
 search_full_content: true
@@ -87,7 +82,6 @@ exclude:
   - /node_modules
   - /package.json
   - /package-lock.json
-  - /staticman.yml
   - /README.md
   - "*.code-workspace"
 
@@ -137,7 +131,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: false # TODO: Enable.
+      comments: true
       share: true
       related: true
   - scope:

@@ -60,3 +60,13 @@ html {
     text-align: justify;
   }
 }
+
+// Comments
+#custom-comments {
+  $utterances-padding-bottom: 20px;
+  $utterances-padding-x: 4px;
+
+  margin-bottom: -$utterances-padding-bottom;
+  margin-left: -$utterances-padding-x;
+  margin-right: -$utterances-padding-x;
+}
