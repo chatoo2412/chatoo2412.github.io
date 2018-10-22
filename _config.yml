@@ -46,7 +46,7 @@ naver_site_verification: 222e2a1c028a3cb2b03a0303e74687f323bed21c
 twitter:
   username: chatoo2412
 facebook:
-  app_id: 313014615948274
+  app_id: 474883839675210
 og_image: /assets/images/cover.png
 social:
   type: Person
@@ -55,7 +55,7 @@ social:
     - https://www.linkedin.com/in/chatoo2412/
 
 analytics:
-  provider: google
+  provider: custom
   google:
     tracking_id: UA-126058581-1
 
