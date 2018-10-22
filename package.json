@@ -8,6 +8,6 @@
     "test": "exit 0"
   },
   "devDependencies": {
-    "prettier": "github:prettier/prettier"
+    "prettier": "github:prettier/prettier#91206891cd7b6209f1e7213f8cb43f64e0eec857"
   }
 }
