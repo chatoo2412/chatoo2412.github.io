@@ -22,7 +22,7 @@ teaser: /assets/images/cover.png
 
 breadcrumbs: true
 
-words_per_minute: 200 # TODO:
+words_per_minute: 40
 
 comments:
   provider: staticman_v2
@@ -91,9 +91,13 @@ exclude:
   - /README.md
   - "*.code-workspace"
 
-# Conversion
-
-# Markdown Processing
+# Conversion and Markdown Processing
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 # Sass/SCSS
 sass:
