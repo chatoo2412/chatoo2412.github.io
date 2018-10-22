@@ -6,7 +6,7 @@ minimal_mistakes_skin: orchid
 locale: ko-KR
 
 title: chatoo의 웹개발 블로그
-title_separator: "-"
+title_separator: '-'
 
 name: Wooram Jun
 
@@ -14,7 +14,7 @@ description: 웹기술과 개발 프로세스에 대한 생각을 공유합니�
 
 url: https://chatoo2412.github.io
 
-baseurl: ""
+baseurl: ''
 
 repository: chatoo2412/chatoo2412.github.io
 
@@ -83,7 +83,7 @@ exclude:
   - /package.json
   - /package-lock.json
   - /README.md
-  - "*.code-workspace"
+  - '*.code-workspace'
 
 # Conversion and Markdown Processing
 kramdown:
@@ -125,7 +125,7 @@ tag_archive:
 # Defaults
 defaults:
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single
@@ -135,7 +135,7 @@ defaults:
       share: true
       related: true
   - scope:
-      path: ""
+      path: ''
       type: pages
     values:
       author_profile: true

@@ -4,7 +4,7 @@
   "author": "chatoo2412",
   "homepage": "https://chatoo2412.github.io/",
   "scripts": {
-    "pretest": "prettier --list-different \"**/*.{yml,md,html,scss,json}\"",
+    "pretest": "prettier --list-different \"**/*.{yml,md,scss,css,js,json}\"",
     "test": "exit 0"
   },
   "devDependencies": {

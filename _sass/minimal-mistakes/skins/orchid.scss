@@ -13,11 +13,11 @@ $large: 1024px; // 64em
 $x-large: 1280px; // 80em
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700|Noto+Sans+KR:400,700|Space+Mono:400,700&subset=korean");
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700|Noto+Sans+KR:400,700|Space+Mono:400,700&subset=korean');
 
-$serif: "Noto Serif KR", serif;
-$sans-serif: "Noto Sans KR", sans-serif;
-$monospace: "Space Mono", monospace;
+$serif: 'Noto Serif KR', serif;
+$sans-serif: 'Noto Sans KR', sans-serif;
+$monospace: 'Space Mono', monospace;
 
 // Functions
 @function em($target, $context: $doc-font-size) {
