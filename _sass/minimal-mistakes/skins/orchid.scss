@@ -3,9 +3,60 @@ $orchid: #7981ff;
 
 $link-color: lighten($orchid, 10%);
 
+// Sizes
+$doc-font-size: 16;
+
+$small: 600px; // 37.5em
+$medium: 768px; // 48em
+$medium-wide: 900px; // 56.25em
+$large: 1024px; // 64em
+$x-large: 1280px; // 80em
+
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700|Noto+Sans+KR:400,700|Space+Mono:400,700&subset=korean");
 
 $serif: "Noto Serif KR", serif;
 $sans-serif: "Noto Sans KR", sans-serif;
 $monospace: "Space Mono", monospace;
+
+// Functions
+@function em($target, $context: $doc-font-size) {
+  @return (($target / ($target * 0 + 1)) / $context) * 1em;
+}
+
+// Global
+html {
+  @media (min-width: em($medium)) {
+    word-break: keep-all;
+  }
+
+  @media (min-width: em($x-large)) {
+    font-size: 20px !important;
+  }
+}
+
+// Layout
+.initial-content,
+.search-content {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: em($small)) {
+    max-width: $small;
+  }
+
+  @media (min-width: em($large)) {
+    max-width: $large;
+  }
+
+  @media (min-width: em($x-large)) {
+    max-width: $x-large;
+  }
+}
+
+// Content
+.page__content {
+  p {
+    text-align: justify;
+  }
+}
