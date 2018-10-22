@@ -18,8 +18,6 @@ baseurl: ""
 
 repository: chatoo2412/chatoo2412.github.io
 
-# head_scripts:
-
 teaser: /assets/images/cover.png
 
 breadcrumbs: true
@@ -33,9 +31,6 @@ staticman:
 reCaptcha:
   siteKey: 6LdECXEUAAAAAKlce6JumAjXObpflAQ_TbCfg6zv
   secret: GSz/p9ekpchx4x2aM7U2PcQBVhrmF0/z+maFBWk9dwkwoMDwN2GQN2rBgtWiAlAbP2yHyn8F9XAhKegvSBJmSp3pP7RPp9bRCJAXLF0suytAU2t1YmiAxf3gRRCkswHbIzNZOa8YHU3G5BBetJKcvlLCG11ffjS26HiaCDZpeQE=
-
-atom_feed:
-  path:
 
 search: true
 search_full_content: true
