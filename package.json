@@ -4,10 +4,10 @@
   "author": "chatoo2412",
   "homepage": "https://chatoo2412.github.io/",
   "scripts": {
-    "pretest": "prettier --list-different \"**/*.{yml,md,scss,css,js,json}\"",
+    "pretest": "prettier --list-different \"**/*.{yml,md,html,scss,css,js,json}\"",
     "test": "exit 0"
   },
   "devDependencies": {
-    "prettier": "github:prettier/prettier#91206891cd7b6209f1e7213f8cb43f64e0eec857"
+    "prettier": "1.15.1"
   }
 }
