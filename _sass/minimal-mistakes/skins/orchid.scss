@@ -1,67 +1,93 @@
-// Colors
+/* Custom Variables */
 $orchid: #7981ff;
 
-$link-color: lighten($orchid, 10%);
+$font-size: 16px;
+$font-size-large: 18px;
 
-// Sizes
-$doc-font-size: 16;
+$sidebar-width: 220px;
+$content-width: 41em;
 
-$small: 600px; // 37.5em
-$medium: 768px; // 48em
-$medium-wide: 900px; // 56.25em
-$large: 1024px; // 64em
-$x-large: 1280px; // 80em
+/* Variables */
+/* Colors */
+$link-color: desaturate($orchid, 20%);
 
-// Fonts
+/* Sizes */
+$small: 600px; // = 37.5em
+$medium: 768px; // = 48em
+$medium-wide: 900px; // = 56.25em
+$large: 1024px; // = 64em
+$x-large: 1280px; // = 80em
+
+/* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700|Noto+Sans+KR:400,700|Space+Mono:400,700&subset=korean');
 
 $serif: 'Noto Serif KR', serif;
 $sans-serif: 'Noto Sans KR', sans-serif;
 $monospace: 'Space Mono', monospace;
 
-// Functions
-@function em($target, $context: $doc-font-size) {
-  @return (($target / ($target * 0 + 1)) / $context) * 1em;
-}
-
-// Global
+/* Global */
 html {
-  @media (min-width: em($medium)) {
+  font-size: $font-size;
+
+  @media (min-width: $small) {
     word-break: keep-all;
+    text-align: justify;
   }
 
-  @media (min-width: em($x-large)) {
-    font-size: 20px !important;
+  @media (min-width: $large) {
+    font-size: $font-size-large !important;
   }
 }
 
-// Layout
+/* Layout */
 .initial-content,
 .search-content {
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: em($small)) {
-    max-width: $small;
-  }
+  max-width: 1em + $content-width + 1em;
+}
 
-  @media (min-width: em($large)) {
-    max-width: $large;
-  }
-
-  @media (min-width: em($x-large)) {
+@media (min-width: $large) {
+  .initial-content,
+  .search-content {
     max-width: $x-large;
   }
-}
 
-// Content
-.page__content {
-  p {
-    text-align: justify;
+  .breadcrumbs ol,
+  .page__related {
+    float: left !important;
+    margin-left: $sidebar-width !important;
+    width: ($content-width / 1em) * $font-size-large !important;
+  }
+
+  .sidebar {
+    width: $sidebar-width !important;
+    padding-right: 1em !important;
+  }
+
+  .page,
+  .archive {
+    float: left !important;
+    width: $content-width !important;
+    padding-right: 0 !important;
   }
 }
 
-// Comments
+/* Content */
+// html {
+//   @media (min-width: $small) {
+//     .page__content {
+//       p,
+//       li {
+//         word-break: keep-all;
+//         text-align: justify;
+//       }
+//     }
+//   }
+// }
+
+/* Comments */
 #custom-comments {
   $utterances-padding-bottom: 20px;
   $utterances-padding-x: 4px;
