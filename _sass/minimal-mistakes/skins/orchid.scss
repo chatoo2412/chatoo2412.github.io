@@ -19,9 +19,10 @@ $large: 1024px; // = 64em
 $x-large: 1280px; // = 80em
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700|Noto+Sans+KR:400,700|Space+Mono:400,700&subset=korean');
+// @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700|Noto+Sans+KR:400,700|Space+Mono:400,700&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Space+Mono:400,700&subset=korean');
 
-$serif: 'Noto Serif KR', serif;
+// $serif: 'Noto Serif KR', serif;
 $sans-serif: 'Noto Sans KR', sans-serif;
 $monospace: 'Space Mono', monospace;
 
@@ -31,11 +32,6 @@ html {
 
   font-size: $font-size;
   font-variant-ligatures: none;
-
-  @media (min-width: $small) {
-    word-break: keep-all;
-    text-align: justify;
-  }
 
   @media (min-width: $large) {
     font-size: $font-size-large !important;
@@ -112,6 +108,11 @@ pre {
   h5,
   h6 {
     font-size: 1em;
+  }
+
+  @media (min-width: $small) {
+    word-break: keep-all;
+    text-align: justify;
   }
 }
 

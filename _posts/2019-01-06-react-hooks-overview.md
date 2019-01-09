@@ -1,12 +1,12 @@
 ---
 categories:
-  - javascript
-  - react
+  - JavaScript
+  - React
 tags:
-  - javascript
-  - library
-  - react
-  - translation
+  - JavaScript
+  - Library
+  - React
+  - Translation
 date: 2019-01-06T21:00:00+09:00
 last_modified_at: 2019-01-09T23:44:00+09:00
 
@@ -21,17 +21,18 @@ excerpt: React Hooks이 무엇인지, 어떻게 사용하는지 간략하게 소
 이 글은 React 공식 문서 [Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html)를 번역한 글입니다.
 </p>
 
-<p class="notice--primary" markdown="1">
-*Hooks*는 클래스로 작성하지 않고도 state와 다른 React의 기능들을 사용할 수 있게 해주는 새로운 기능입니다. React v16.7.0-alpha부터 사용할 수 있습니다.
+<p class="notice--success">
+*Hooks*는 클래스를 작성하지 않고도 state와 다른 React의 기능들을 사용할 수 있게 해주는 새로운 기능입니다. React v16.7.0-alpha부터 사용할 수 있습니다.
 </p>
 
 Hooks는 [하위 호환성](https://reactjs.org/docs/hooks-intro.html#no-breaking-changes)을 가지고 있습니다. 이 문서는 React에 경험이 있는 사용자를 대상으로 Hooks에 대해 간략히 소개합니다.
 
 이 문서는 빠르게 진행됩니다. 혼란스러운 경우에는 다음과 같은 박스를 참고하세요.
 
-> 자세한 설명
->
-> React에 Hooks를 도입하는 이유를 알고 싶다면 [Motivation](https://reactjs.org/docs/hooks-intro.html#motivation) 파트를 읽어보세요.
+<section class="notice--warning">
+  <h4>자세한 설명</h4>
+  <p markdown="1">React에 Hooks를 도입하는 이유를 알고 싶다면 [Motivation](https://reactjs.org/docs/hooks-intro.html#motivation) 파트를 읽어보세요.</p>
+</section>
 
 **↑↑↑ 각 섹션 마지막에는 이런 박스가 있습니다.** 자세한 설명을 보시려면 링크를 따라가시면 됩니다.
 
@@ -81,9 +82,10 @@ Hooks는 함수 컴포넌트에서 React state와 생명주기 기능(lifecycle 
 
 React는 `useState` 같은 내장 Hooks를 몇 가지 제공합니다. 컴포넌트 간에 stateful 로직을 재사용하기 위해서 custom Hooks를 만드는 것도 물론 가능합니다. 일단 내장 Hooks를 먼저 보겠습니다.
 
-> 자세한 설명
->
-> State Hook에 대해서는 독립된 문서 [Using the State Hook](https://reactjs.org/docs/hooks-state.html)에서 더 알아보세요.
+<section class="notice--warning">
+  <h4>자세한 설명</h4>
+  <p markdown="1">State Hook에 대해서는 독립된 문서 [Using the State Hook](https://reactjs.org/docs/hooks-state.html)에서 더 알아보세요.</p>
+</section>
 
 ## ⚡️ Effect Hook
 
@@ -170,9 +172,10 @@ function FriendStatusWithCounter(props) {
 
 Hooks을 사용하면 -- 구독을 추가하고 제거하는 로직 같은 -- 서로 관련있는 코드들을 한군데에 모아서 작성할 수 있습니다. 반면 클래스 컴포넌트에서는 생명주기 메소드(lifecycle methods) 각각에 쪼개서 넣어야만 했습니다. <span class="small">(역자 주: [Sunil Pai](https://twitter.com/threepointone)의 [글과 그림](https://twitter.com/threepointone/status/1056594421079261185)을 보면 차이를 한눈에 볼 수 있습니다.)</span>
 
-> 자세한 설명
->
-> `useEffect`에 대해서는 독립된 문서 [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)에서 더 알아보세요.
+<section class="notice--warning">
+  <h4>자세한 설명</h4>
+  <p markdown="1">`useEffect`에 대해서는 독립된 문서 [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)에서 더 알아보세요.</p>
+</section>
 
 ## ✌️ Hooks 사용 규칙
 
@@ -183,9 +186,10 @@ Hooks는 그냥 JavaScript 함수이지만, 두 가지 규칙을 준수해야 �
 
 이 규칙들을 강제하기 위해서 [linter plugin](https://www.npmjs.com/package/eslint-plugin-react-hooks)을 제공하고 있습니다. 이 규칙들이 제약이 심하고 혼란스럽다고 처음에는 느낄 수 있습니다. 하지만 이것은 Hooks가 제대로 동작하기 위해서는 필수적인 조건입니다.
 
-> 자세한 설명
->
-> 이 규칙들에 대해서는 독립된 문서 [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)에서 더 알아보세요.
+<section class="notice--warning">
+  <h4>자세한 설명</h4>
+  <p markdown="1">이 규칙들에 대해서는 독립된 문서 [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)에서 더 알아보세요.</p>
+</section>
 
 ## 💡 나만의 Hooks 만들기
 
@@ -245,9 +249,10 @@ Custom Hooks는 기능이라기보다는 컨벤션(convention)에 가깝습니�
 
 폼 핸들링, 애니메이션, 선언적 구독(declarative subscriptions), 타이머 등 많은 경우에 custom Hooks를 사용할 수 있습니다. 우리는 React 커뮤니티에서 어떤 custom Hooks가 만들어질지 정말 기대됩니다.
 
-> 자세한 설명
->
-> Custom Hooks에 대해서는 독립된 문서 [Building Your Own Hooks](https://reactjs.org/docs/hooks-custom.html)에서 더 알아보세요.
+<section class="notice--warning">
+  <h4>자세한 설명</h4>
+  <p markdown="1">Custom Hooks에 대해서는 독립된 문서 [Building Your Own Hooks](https://reactjs.org/docs/hooks-custom.html)에서 더 알아보세요.</p>
+</section>
 
 ## 🔌 다른 내장 Hooks
 
@@ -269,9 +274,10 @@ function Todos() {
   // ...
 ```
 
-> 자세한 설명
->
-> 모든 내장 Hooks에 대해서는 독립된 문서 [Hooks API Reference](https://reactjs.org/docs/hooks-reference.html)에서 더 알아보세요.
+<section class="notice--warning">
+  <h4>자세한 설명</h4>
+  <p markdown="1">모든 내장 Hooks에 대해서는 독립된 문서 [Hooks API Reference](https://reactjs.org/docs/hooks-reference.html)에서 더 알아보세요.</p>
+</section>
 
 ## 다음 단계
 

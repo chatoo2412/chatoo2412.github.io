@@ -22,7 +22,7 @@ teaser: /assets/images/cover.png
 
 breadcrumbs: true
 
-words_per_minute: 40
+words_per_minute: 50
 
 comments:
   provider: custom
