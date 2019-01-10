@@ -13,6 +13,11 @@ last_modified_at: 2019-01-03T01:28:00+09:00
 title: babel-plugin-macros로 무설정 코드 변환
 description: babel-plugin-macros가 무엇인지, 이것이 어떻게 생산성을 올려주는지 설명합니다.
 excerpt: babel-plugin-macros가 무엇인지, 이것이 어떻게 생산성을 올려주는지 설명합니다.
+header:
+  # image: /assets/posts/logo-babel.png
+  # image_description:
+  teaser: /assets/posts/logo-babel.png
+  og_image: /assets/posts/logo-babel.png
 ---
 
 {% raw %}

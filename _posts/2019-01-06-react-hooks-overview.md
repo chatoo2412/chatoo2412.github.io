@@ -13,6 +13,11 @@ last_modified_at: 2019-01-09T23:44:00+09:00
 title: React 공식 문서 번역 - Hooks 개요
 description: React Hooks이 무엇인지, 어떻게 사용하는지 간략하게 소개합니다.
 excerpt: React Hooks이 무엇인지, 어떻게 사용하는지 간략하게 소개합니다.
+header:
+  # image: /assets/posts/logo-react.png
+  # image_description:
+  teaser: /assets/posts/logo-react.png
+  og_image: /assets/posts/logo-react.png
 ---
 
 {% raw %}
