@@ -77,13 +77,13 @@ footer:
 include:
   - /_pages
 exclude:
+  # - /LICENSE
+  - /README.md
   - /Gemfile
   - /Gemfile.lock
-  - /node_modules
   - /package.json
   - /package-lock.json
-  - /README.md
-  - '*.code-workspace'
+  - /node_modules
 
 # Conversion and Markdown Processing
 kramdown:
