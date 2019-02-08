@@ -1,7 +1,7 @@
 {
   "name": "chatoo2412.github.io",
   "description": "chatoo's web development blog.",
-  "author": "chatoo2412",
+  "author": "Wooram Jun (https://github.com/chatoo2412)",
   "homepage": "https://chatoo2412.github.io/",
   "scripts": {
     "pretest": "prettier --list-different \"**/*.{yml,md,html,scss,css,js,json}\"",
