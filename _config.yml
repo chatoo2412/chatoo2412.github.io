@@ -32,6 +32,7 @@ search_full_content: true
 search_provider: lunr
 
 google_site_verification: H7uBU48g_L07v7xGSLaC74nZVRyGG2VQR1VdCy6_MLY
+bing_site_verification: 944C6CF3DBF48886D390BE0255EBB5B7
 naver_site_verification: 222e2a1c028a3cb2b03a0303e74687f323bed21c
 twitter:
   username: chatoo2412
