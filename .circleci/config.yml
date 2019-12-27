@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:10.13.0 # TODO: Use nvm. https://discuss.circleci.com/t/fallback-to-nvmrc-if-node-version-not-specified/162
+      - image: circleci/node:12.14.0 # TODO. Use nvm
     steps:
       - checkout
 
