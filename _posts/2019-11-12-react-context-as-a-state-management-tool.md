@@ -7,9 +7,9 @@ tags:
   - Library
   - React
 date: 2019-11-12T13:49:00+09:00
-last_modified_at: 2019-11-12T16:56:00+09:00
+last_modified_at: 2019-12-30T20:02:00+09:00
 
-title: 상태 관리 관점에서 바라본 React Context
+title: 상태 관리 도구로서의 React Context
 description: React Context의 간략한 개념과 용도를 다른 상태 관리 라이브러리와 비교해서 설명합니다.
 excerpt: React Context의 간략한 개념과 용도를 다른 상태 관리 라이브러리와 비교해서 설명합니다.
 header:
@@ -110,7 +110,7 @@ Redux를 사용하려면 패턴 그 자체를 공부해야 하고, 사용 규칙
 
 [Redux의 제 1 원칙](https://redux.js.org/introduction/three-principles#single-source-of-truth)에 따르면 모든 상태는 하나의 store에 저장되어야 합니다. 하지만 과연 그게 최선일까요?
 
-![Redux Single State Tree](/assets/posts/2019-11-12-react-context-from-a-state-management-perspective/single-state-tree.png)
+![Redux Single State Tree](/assets/posts/2019-11-12-react-context-as-a-state-management-tool/single-state-tree.png)
 
 예를 들어 React 컴포넌트 트리 중 특정 subtree(위 그림의 파란 사각형)에서만 공유되는 데이터가 존재한다고 가정해봅시다. Redux는 이러한 케이스를 커버하지 못하며 무조건 global state에 저장하는 수밖에 없습니다(왼쪽 그림). Redux 측에서는 얘기하기를 [reducer로 접근을 제어하기 때문에 문제 없다](https://redux.js.org/faq/store-setup#can-or-should-i-create-multiple-stores-can-i-import-my-store-directly-and-use-it-in-components-myself)고 합니다.
 
@@ -196,7 +196,7 @@ Context는 consume할 때 가장 가까운 조상 provider에서 값을 꺼내�
 
 #### Wrapper Hell
 
-![Wrapper Hell](/assets/posts/2019-11-12-react-context-from-a-state-management-perspective/wrapper-hell.png)
+![Wrapper Hell](/assets/posts/2019-11-12-react-context-as-a-state-management-tool/wrapper-hell.png)
 
 Context가 제공하는 provider와 consumer는 React 컴포넌트이기 때문에 wrapper hell은 여전히 발생합니다.
 
